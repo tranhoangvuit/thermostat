@@ -1,0 +1,5 @@
+HOUSEHOLD_TOKEN_1 = 'eyJhbGciOiJIUzI1NiJ9.eyJzdG9yZV9pZCI6IjU2YzQwOTNhLWJlNDUtNDViNC04Njg1LWUxNGM1MzIyZjQ4OCIsInNlY3JldCI6IjA2YmY0MDg3MWM5YzkyMzlhZWM0NDk1MSIsImlhdCI6MTUxMzA0OTkyMH0.lnhBcIvG7FI90hYZgJ_QnjIf9bKKy9wX7zSG8JkBiLQ'.freeze
+HOUSEHOLD_TOKEN_2 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'.freeze
+
+Thermostat.find_or_create_by!(household_token: HOUSEHOLD_TOKEN_1, location: 'Bed Room')
+Thermostat.find_or_create_by!(household_token: HOUSEHOLD_TOKEN_2, location: 'Living Room')
