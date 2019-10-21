@@ -55,10 +55,12 @@ RSpec.configure do |config|
 
   config.before(:each) do
     DatabaseCleaner.start
+    Rails.cache.clear
   end
 
   config.after(:each) do
     DatabaseCleaner.clean
+    Rails.cache.clear
   end
 
   config.render_views

@@ -6,6 +6,7 @@ To inilize this project, follow this step:
  - Create new database: `rails db:create`
  - Create new tables: `rails db:migrate`
  - Seed example data: `rails db:seed`
+ - Clear cache issues: `rails cache:clear`
 
 # RUN PROJECT
 We can run this project with two way:
